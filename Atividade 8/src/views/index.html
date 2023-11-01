@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <form action="/calculadora/calcular" method="post">
+            <div class="mb-3">
+                <label for="numero_a" class="form-label">Número A:</label>
+                <input type="number" class="form-control" id="numero_a" name="numero_a" required>
+            </div>
+            <div class="mb-3">
+                <label for="numero_b" class="form-label">Número B:</label>
+                <input type="number" class="form-control" id="numero_b" name="numero_b" required>
+            </div>
+            <div class="mb-3">
+                <label for="operacao" class="form-label">Operação:</label>
+                <select class="form-select" id="operacao" name="operacao" required>
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Calcular</button>
+        </form>
+    </div>
+</body>
+
+</html>
